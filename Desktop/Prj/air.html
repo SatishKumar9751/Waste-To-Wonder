@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution Index Calculator</title>
+    <link rel="stylesheet" href="air.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Pollution Index Calculator</h1>
+        <label for="city">Select Your City:</label>
+        <select id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Patna">Patna</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+
+        <label for="hours">Hours Spent Outside:</label>
+        <input type="number" id="hours" min="1" max="24" placeholder="Enter hours">
+
+        <button onclick="calculatePollution()">Calculate Impact</button>
+
+        <div id="result"></div>
+    </div>
+
+    <a href="dash.html" style="
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #0072ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+">⬅ Back to Home</a>
+
+
+    <script src="air.js"></script>
+</body>
+</html>
